@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Customers API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Customers", "request": { "method": "GET", "url": "{{baseUrl}}/api/customers" } },
+    { "name": "Create Customer", "request": { "method": "POST", "url": "{{baseUrl}}/api/customers", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Customer\"}" } } },
+    { "name": "Show Customer", "request": { "method": "GET", "url": "{{baseUrl}}/api/customers/1" } },
+    { "name": "Update Customer", "request": { "method": "PUT", "url": "{{baseUrl}}/api/customers/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Customer\"}" } } },
+    { "name": "Delete Customer", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/customers/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
