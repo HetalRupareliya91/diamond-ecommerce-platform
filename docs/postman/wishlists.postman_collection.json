@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Wishlists API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Wishlists", "request": { "method": "GET", "url": "{{baseUrl}}/api/wishlists" } },
+    { "name": "Create Wishlist", "request": { "method": "POST", "url": "{{baseUrl}}/api/wishlists", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Wishlist\"}" } } },
+    { "name": "Show Wishlist", "request": { "method": "GET", "url": "{{baseUrl}}/api/wishlists/1" } },
+    { "name": "Update Wishlist", "request": { "method": "PUT", "url": "{{baseUrl}}/api/wishlists/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Wishlist\"}" } } },
+    { "name": "Delete Wishlist", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/wishlists/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
