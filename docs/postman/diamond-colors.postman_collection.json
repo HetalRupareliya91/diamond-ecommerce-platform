@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Diamond Colors API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Diamond Colors", "request": { "method": "GET", "url": "{{baseUrl}}/api/diamond-colors" } },
+    { "name": "Create Diamond Color", "request": { "method": "POST", "url": "{{baseUrl}}/api/diamond-colors", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Diamond Color\"}" } } },
+    { "name": "Show Diamond Color", "request": { "method": "GET", "url": "{{baseUrl}}/api/diamond-colors/1" } },
+    { "name": "Update Diamond Color", "request": { "method": "PUT", "url": "{{baseUrl}}/api/diamond-colors/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Diamond Color\"}" } } },
+    { "name": "Delete Diamond Color", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/diamond-colors/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
