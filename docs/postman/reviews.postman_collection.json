@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Reviews API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Reviews", "request": { "method": "GET", "url": "{{baseUrl}}/api/reviews" } },
+    { "name": "Create Review", "request": { "method": "POST", "url": "{{baseUrl}}/api/reviews", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Review\"}" } } },
+    { "name": "Show Review", "request": { "method": "GET", "url": "{{baseUrl}}/api/reviews/1" } },
+    { "name": "Update Review", "request": { "method": "PUT", "url": "{{baseUrl}}/api/reviews/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Review\"}" } } },
+    { "name": "Delete Review", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/reviews/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
