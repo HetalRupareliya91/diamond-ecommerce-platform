@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Necklaces API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Necklaces", "request": { "method": "GET", "url": "{{baseUrl}}/api/necklaces" } },
+    { "name": "Create Necklace", "request": { "method": "POST", "url": "{{baseUrl}}/api/necklaces", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Necklace\"}" } } },
+    { "name": "Show Necklace", "request": { "method": "GET", "url": "{{baseUrl}}/api/necklaces/1" } },
+    { "name": "Update Necklace", "request": { "method": "PUT", "url": "{{baseUrl}}/api/necklaces/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Necklace\"}" } } },
+    { "name": "Delete Necklace", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/necklaces/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
