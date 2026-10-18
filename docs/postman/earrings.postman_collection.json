@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Earrings API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Earrings", "request": { "method": "GET", "url": "{{baseUrl}}/api/earrings" } },
+    { "name": "Create Earring", "request": { "method": "POST", "url": "{{baseUrl}}/api/earrings", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Earring\"}" } } },
+    { "name": "Show Earring", "request": { "method": "GET", "url": "{{baseUrl}}/api/earrings/1" } },
+    { "name": "Update Earring", "request": { "method": "PUT", "url": "{{baseUrl}}/api/earrings/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Earring\"}" } } },
+    { "name": "Delete Earring", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/earrings/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
