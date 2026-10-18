@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Wedding Bands API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Wedding Bands", "request": { "method": "GET", "url": "{{baseUrl}}/api/wedding-bands" } },
+    { "name": "Create Wedding Band", "request": { "method": "POST", "url": "{{baseUrl}}/api/wedding-bands", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Wedding Band\"}" } } },
+    { "name": "Show Wedding Band", "request": { "method": "GET", "url": "{{baseUrl}}/api/wedding-bands/1" } },
+    { "name": "Update Wedding Band", "request": { "method": "PUT", "url": "{{baseUrl}}/api/wedding-bands/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Wedding Band\"}" } } },
+    { "name": "Delete Wedding Band", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/wedding-bands/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
