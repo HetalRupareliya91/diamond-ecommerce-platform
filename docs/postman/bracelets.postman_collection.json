@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Bracelets API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Bracelets", "request": { "method": "GET", "url": "{{baseUrl}}/api/bracelets" } },
+    { "name": "Create Bracelet", "request": { "method": "POST", "url": "{{baseUrl}}/api/bracelets", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Bracelet\"}" } } },
+    { "name": "Show Bracelet", "request": { "method": "GET", "url": "{{baseUrl}}/api/bracelets/1" } },
+    { "name": "Update Bracelet", "request": { "method": "PUT", "url": "{{baseUrl}}/api/bracelets/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Bracelet\"}" } } },
+    { "name": "Delete Bracelet", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/bracelets/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
