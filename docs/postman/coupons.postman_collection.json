@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Coupons API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Coupons", "request": { "method": "GET", "url": "{{baseUrl}}/api/coupons" } },
+    { "name": "Create Coupon", "request": { "method": "POST", "url": "{{baseUrl}}/api/coupons", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Coupon\"}" } } },
+    { "name": "Show Coupon", "request": { "method": "GET", "url": "{{baseUrl}}/api/coupons/1" } },
+    { "name": "Update Coupon", "request": { "method": "PUT", "url": "{{baseUrl}}/api/coupons/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Coupon\"}" } } },
+    { "name": "Delete Coupon", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/coupons/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
