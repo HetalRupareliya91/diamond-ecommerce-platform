@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Shipments API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Shipments", "request": { "method": "GET", "url": "{{baseUrl}}/api/shipments" } },
+    { "name": "Create Shipment", "request": { "method": "POST", "url": "{{baseUrl}}/api/shipments", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Shipment\"}" } } },
+    { "name": "Show Shipment", "request": { "method": "GET", "url": "{{baseUrl}}/api/shipments/1" } },
+    { "name": "Update Shipment", "request": { "method": "PUT", "url": "{{baseUrl}}/api/shipments/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Shipment\"}" } } },
+    { "name": "Delete Shipment", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/shipments/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
