@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Orders API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Orders", "request": { "method": "GET", "url": "{{baseUrl}}/api/orders" } },
+    { "name": "Create Order", "request": { "method": "POST", "url": "{{baseUrl}}/api/orders", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Order\"}" } } },
+    { "name": "Show Order", "request": { "method": "GET", "url": "{{baseUrl}}/api/orders/1" } },
+    { "name": "Update Order", "request": { "method": "PUT", "url": "{{baseUrl}}/api/orders/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Order\"}" } } },
+    { "name": "Delete Order", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/orders/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
