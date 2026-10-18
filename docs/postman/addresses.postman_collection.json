@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Addresses API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Addresses", "request": { "method": "GET", "url": "{{baseUrl}}/api/addresses" } },
+    { "name": "Create Address", "request": { "method": "POST", "url": "{{baseUrl}}/api/addresses", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Address\"}" } } },
+    { "name": "Show Address", "request": { "method": "GET", "url": "{{baseUrl}}/api/addresses/1" } },
+    { "name": "Update Address", "request": { "method": "PUT", "url": "{{baseUrl}}/api/addresses/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Address\"}" } } },
+    { "name": "Delete Address", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/addresses/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
