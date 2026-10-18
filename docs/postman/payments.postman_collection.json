@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Payments API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Payments", "request": { "method": "GET", "url": "{{baseUrl}}/api/payments" } },
+    { "name": "Create Payment", "request": { "method": "POST", "url": "{{baseUrl}}/api/payments", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Payment\"}" } } },
+    { "name": "Show Payment", "request": { "method": "GET", "url": "{{baseUrl}}/api/payments/1" } },
+    { "name": "Update Payment", "request": { "method": "PUT", "url": "{{baseUrl}}/api/payments/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Payment\"}" } } },
+    { "name": "Delete Payment", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/payments/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
