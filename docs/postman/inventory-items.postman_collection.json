@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Inventory API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Inventory", "request": { "method": "GET", "url": "{{baseUrl}}/api/inventory-items" } },
+    { "name": "Create Inventory Item", "request": { "method": "POST", "url": "{{baseUrl}}/api/inventory-items", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Inventory Item\"}" } } },
+    { "name": "Show Inventory Item", "request": { "method": "GET", "url": "{{baseUrl}}/api/inventory-items/1" } },
+    { "name": "Update Inventory Item", "request": { "method": "PUT", "url": "{{baseUrl}}/api/inventory-items/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Inventory Item\"}" } } },
+    { "name": "Delete Inventory Item", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/inventory-items/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
