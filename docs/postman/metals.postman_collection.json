@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Metals API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Metals", "request": { "method": "GET", "url": "{{baseUrl}}/api/metals" } },
+    { "name": "Create Metal", "request": { "method": "POST", "url": "{{baseUrl}}/api/metals", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Metal\"}" } } },
+    { "name": "Show Metal", "request": { "method": "GET", "url": "{{baseUrl}}/api/metals/1" } },
+    { "name": "Update Metal", "request": { "method": "PUT", "url": "{{baseUrl}}/api/metals/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Metal\"}" } } },
+    { "name": "Delete Metal", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/metals/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
