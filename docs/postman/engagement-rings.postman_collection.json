@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Engagement Rings API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Engagement Rings", "request": { "method": "GET", "url": "{{baseUrl}}/api/engagement-rings" } },
+    { "name": "Create Engagement Ring", "request": { "method": "POST", "url": "{{baseUrl}}/api/engagement-rings", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Engagement Ring\"}" } } },
+    { "name": "Show Engagement Ring", "request": { "method": "GET", "url": "{{baseUrl}}/api/engagement-rings/1" } },
+    { "name": "Update Engagement Ring", "request": { "method": "PUT", "url": "{{baseUrl}}/api/engagement-rings/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Engagement Ring\"}" } } },
+    { "name": "Delete Engagement Ring", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/engagement-rings/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
