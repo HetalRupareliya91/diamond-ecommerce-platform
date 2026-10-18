@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Ring Settings API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Ring Settings", "request": { "method": "GET", "url": "{{baseUrl}}/api/ring-settings" } },
+    { "name": "Create Ring Setting", "request": { "method": "POST", "url": "{{baseUrl}}/api/ring-settings", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Ring Setting\"}" } } },
+    { "name": "Show Ring Setting", "request": { "method": "GET", "url": "{{baseUrl}}/api/ring-settings/1" } },
+    { "name": "Update Ring Setting", "request": { "method": "PUT", "url": "{{baseUrl}}/api/ring-settings/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Ring Setting\"}" } } },
+    { "name": "Delete Ring Setting", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/ring-settings/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
