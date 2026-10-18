@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Certificates API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Certificates", "request": { "method": "GET", "url": "{{baseUrl}}/api/certificates" } },
+    { "name": "Create Certificate", "request": { "method": "POST", "url": "{{baseUrl}}/api/certificates", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Certificate\"}" } } },
+    { "name": "Show Certificate", "request": { "method": "GET", "url": "{{baseUrl}}/api/certificates/1" } },
+    { "name": "Update Certificate", "request": { "method": "PUT", "url": "{{baseUrl}}/api/certificates/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Certificate\"}" } } },
+    { "name": "Delete Certificate", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/certificates/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
