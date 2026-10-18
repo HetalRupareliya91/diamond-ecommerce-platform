@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Appointments API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "List Appointments", "request": { "method": "GET", "url": "{{baseUrl}}/api/appointments" } },
+    { "name": "Create Appointment", "request": { "method": "POST", "url": "{{baseUrl}}/api/appointments", "body": { "mode": "raw", "raw": "{\"name\": \"Sample Appointment\"}" } } },
+    { "name": "Show Appointment", "request": { "method": "GET", "url": "{{baseUrl}}/api/appointments/1" } },
+    { "name": "Update Appointment", "request": { "method": "PUT", "url": "{{baseUrl}}/api/appointments/1", "body": { "mode": "raw", "raw": "{\"name\": \"Updated Appointment\"}" } } },
+    { "name": "Delete Appointment", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/appointments/1" } }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }]
+}
